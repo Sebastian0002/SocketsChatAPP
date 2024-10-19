@@ -1,0 +1,39 @@
+name: real_time_chat
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+2
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_secure_storage: ^9.2.2
+  font_awesome_flutter: ^10.7.0
+  google_sign_in: ^6.2.1
+  http: ^1.2.0
+  loading_animation_widget: ^1.2.1
+  provider: ^6.1.2
+  pull_to_refresh_flutter3: ^2.0.2
+  socket_io_client: ^2.0.3+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter_launcher_icons: 
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: 'assets/LogoApp/appIcon1.png'
+  adaptive_icon_background: '#ffffff'
+  adaptive_icon_foreground: 'assets/LogoApp/appIcon1.png'
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/

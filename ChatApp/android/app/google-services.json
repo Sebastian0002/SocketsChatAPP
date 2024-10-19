@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1606985865",
+    "project_id": "singin-method",
+    "storage_bucket": "singin-method.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1606985865:android:bb525ee6e23986737a7e58",
+        "android_client_info": {
+          "package_name": "com.jhoann.realTimeChat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1606985865-939b686fkua97eqn120nii25tsagj9qe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jhoann.realTimeChat",
+            "certificate_hash": "8ce7666c582f4279c3ee9ffd4b1b25d2dfea6fa6"
+          }
+        },
+        {
+          "client_id": "1606985865-n24stp2fcg61i1ris3dmv875aih7eas4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN98vECZwNoJY0PSbmLgYgRrhqDoaP2rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1606985865-n24stp2fcg61i1ris3dmv875aih7eas4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
