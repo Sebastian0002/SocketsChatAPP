@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:real_time_chat/constants/envarioments.dart';
+import 'package:real_time_chat/constants/environments.dart';
 import 'package:real_time_chat/domain/gateways/loginsignup_gateway.dart';
 import 'package:real_time_chat/domain/models/user.dart';
 
@@ -16,7 +16,7 @@ Future<dynamic> loginUser({required String email,required String password})async
   };
 
   try {
-    final res = await http.post(Uri.parse('${Enviroment.apiBaseUrl}/login'),
+    final res = await http.post(Uri.parse('${Environment.apiBaseUrl}/login'),
       body: jsonEncode(data), 
       headers: _headers
     );
@@ -30,7 +30,7 @@ Future<dynamic> loginUser({required String email,required String password})async
 @override
 Future<dynamic> signUpUser({required UserSignUp userSignUp})async{
   try {
-    final http.Response res = await http.post(Uri.parse('${Enviroment.apiBaseUrl}/login/new'),
+    final http.Response res = await http.post(Uri.parse('${Environment.apiBaseUrl}/login/new'),
     body: userSignUpToMap(userSignUp), 
     headers: _headers
     );
@@ -44,7 +44,7 @@ Future<dynamic> signUpUser({required UserSignUp userSignUp})async{
 Future<dynamic> checkTokenStatus({required String token}) async{
   if(token.isEmpty) return;
   _headers.putIfAbsent('x-token', () => token);
-  final res = await http.get(Uri.parse('${Enviroment.apiBaseUrl}/login/renew'),
+  final res = await http.get(Uri.parse('${Environment.apiBaseUrl}/login/renew'),
     headers: _headers
   );
   if(res.statusCode == 200){
@@ -61,7 +61,7 @@ Future<dynamic> checkTokenStatus({required String token}) async{
 Future<dynamic> googleAuth({required String token})async{
   final Map<String, dynamic> data ={'token': token};
   try {
-    final res = await http.post(Uri.parse('${Enviroment.apiBaseUrl}/login/google'),
+    final res = await http.post(Uri.parse('${Environment.apiBaseUrl}/login/google'),
       body: jsonEncode(data), 
       headers: _headers
     );

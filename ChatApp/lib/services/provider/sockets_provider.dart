@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:real_time_chat/constants/envarioments.dart';
+import 'package:real_time_chat/constants/environments.dart';
 import 'package:real_time_chat/ui/pages/login-SignUp/provider/auth_provider.dart';
 import 'package:socket_io_client/socket_io_client.dart' as io;
 
@@ -21,7 +21,7 @@ class SocketsProvider extends ChangeNotifier{
 
     final token = await AuthProvider.getToken();
 
-    _socket = io.io(Enviroment.socketsBaseUrl,{
+    _socket = io.io(Environment.socketsBaseUrl,{
       'transports' : ['websocket'],
       'autoConnect' : true,
       'forceNew' : true,
