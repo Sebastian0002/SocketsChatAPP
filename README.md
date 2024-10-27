@@ -2,6 +2,8 @@
 
 Hey there, this is a mobile application built with Flutter and Node.js. Basically, the app's functionality is similar to instant messengers like WhatsApp or Telegram.
 
+This application was built using good programming practices such as Clean Architecture, SOLID principles, and design patterns like Factory. It also implements provider state management and uses Shared Preferences as a local database to store JWTs for authentication and user states.
+
 # Features:
 
 There are some features that this project has:
