@@ -8,7 +8,7 @@ This application was built using good programming practices such as Clean Archit
 
 There are some features that this project has:
 
-1. Functional authentication for login and signup using credentials or Google, as well as the use of tokens with a Node.js backend 👨🏻‍💻.
+1. Functional authentication for login and signup using credentials or Google signIn, as well as the use of tokens with a Node.js backend 👨🏻‍💻.
 2. Construction of messaging and channels using socket.io in Node.js and achieving proper integration with Flutter for message flow between users 💬.
 3. Control and management of requests using JWT, also evaluating whether it is still active 🔑.
 
